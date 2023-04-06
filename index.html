@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Application</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.4/axios.min.js"defer></script>
+    <script src="app.js" defer></script>
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <h1>Weather of your city in 1 click</h1>
+    <!-- <p>Temperatur of your city is <span id="temp"></span></p> -->
+    <div class = "takingInput">
+        <form action="/" method="post">
+            <label class = "findTemp">City Name: </label>
+            <input class = "cityTemp" type="text" name="cityTemp">
+            <button type="submit">Find</button>
+        </form>
+    </div>
+    <!-- <script>
+        document.getElementById("temp").innerText = cityTemp;
+    </script> -->
+    <div class="output"></div>
+</body>
+</html>
